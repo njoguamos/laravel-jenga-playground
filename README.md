@@ -1,3 +1,5 @@
+<img width="1677" alt="cover" src="https://user-images.githubusercontent.com/29255728/218579323-83146cfa-eb67-4d6b-a9a0-046a4b8aa804.png">
+
 # Documentation
 
 This repository offers a great starting point for testing your Jenga API. This repo implements [Jenga API wrapper for Laravel](https://github.com/njoguamos/laravel-jenga) by [@njoguamos](https://github.com/njoguamos).
