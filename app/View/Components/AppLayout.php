@@ -25,7 +25,7 @@ class AppLayout extends Component
 
     public mixed $token = 'Run jenga:auth to generate';
 
-    public function __construct()
+    public function __construct( public bool $showBackUrl = false)
     {
         $this->merchantCode = config(key: 'jenga.merchant') ?: 'Get merchant code from https://v3.jengahq.io';
         $this->host = config(key: 'jenga.host');

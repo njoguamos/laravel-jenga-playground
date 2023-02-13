@@ -2,7 +2,7 @@
     <div class="flex flex-col space-y-6 w-full">
         <div class="flex flex-col">
             <h2 class="text-3xl font-semibold mb-4">Forex Rates</h2>
-            <a class="bg-white flex px-6 py-4 space-x-2 rounded-lg shadow hover:bg-gray-50 items-center" href="#">
+            <a class="bg-white flex px-6 py-4 space-x-2 rounded-lg shadow hover:bg-gray-50 items-center" href="{{ route('forex') }}">
                 <span class="flex flex-col w-full">
                     <h3 class="text-xl font-bold mb-2">Forex Exchange Rates</h3>
                     <p class="text-gray-700 text-sm max-w-sm">Interact with Foreign Exchange Rates API. Get Currency Conversion Rate For Major Currencies</p>
