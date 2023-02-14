@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use NjoguAmos\Jenga\Api\GetForexExchangeRates;
+use NjoguAmos\Jenga\Api\ForexExchangeRates;
 use NjoguAmos\Jenga\Dto\ExchangeRatesDto;
 
 class ForexRatesController extends Controller
@@ -31,7 +31,7 @@ class ForexRatesController extends Controller
             countryCode: $validated['countryCode']
         );
 
-        $response = (new GetForexExchangeRates())->convert($data);
+        $response = (new ForexExchangeRates())->convert($data);
 
         return back()
             ->withInput(input: $request->all())
