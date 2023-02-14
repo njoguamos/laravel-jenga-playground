@@ -2118,16 +2118,16 @@
         },
         {
             "name": "njoguamos/laravel-jenga",
-            "version": "v1.1.0",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/njoguamos/laravel-jenga.git",
-                "reference": "e0efae5a6f2590540df34752d81fdd1b861fb752"
+                "reference": "bb8003f89dafdd55fbff093d781969b56e6e5f45"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/njoguamos/laravel-jenga/zipball/e0efae5a6f2590540df34752d81fdd1b861fb752",
-                "reference": "e0efae5a6f2590540df34752d81fdd1b861fb752",
+                "url": "https://api.github.com/repos/njoguamos/laravel-jenga/zipball/bb8003f89dafdd55fbff093d781969b56e6e5f45",
+                "reference": "bb8003f89dafdd55fbff093d781969b56e6e5f45",
                 "shasum": ""
             },
             "require": {
@@ -2188,9 +2188,9 @@
             ],
             "support": {
                 "issues": "https://github.com/njoguamos/laravel-jenga/issues",
-                "source": "https://github.com/njoguamos/laravel-jenga/tree/v1.1.0"
+                "source": "https://github.com/njoguamos/laravel-jenga/tree/v1.2.0"
             },
-            "time": "2023-02-14T20:05:56+00:00"
+            "time": "2023-02-14T20:37:14+00:00"
         },
         {
             "name": "nunomaduro/termwind",
