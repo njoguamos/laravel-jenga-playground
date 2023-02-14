@@ -3,12 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use NjoguAmos\Jenga\ForexRates;
+use NjoguAmos\Jenga\Api\GetForexExchangeRates;
+use NjoguAmos\Jenga\Dto\ExchangeRatesDto;
 
 class ForexRatesController extends Controller
 {
     public function create(){
-        return view('forex');
+        return view(view: 'forex',data: [
+            'account' => config(key: 'jenga.account')
+        ]);
     }
 
     public function store(Request $request){
@@ -20,18 +23,18 @@ class ForexRatesController extends Controller
             'countryCode' => ['required'],
         ]);
 
-        $response = (new ForexRates())
-            ->convert(
-                amount: $validated['amount'],
-                currencyCode: $validated['currencyCode'],
-                toCurrency: $validated['toCurrency'],
-                accountNumber: $validated['accountNumber'],
-                countryCode: $validated['countryCode']
-            );
+        $data = new ExchangeRatesDto(
+            amount: $validated['amount'],
+            currencyCode: $validated['currencyCode'],
+            toCurrency: $validated['toCurrency'],
+            accountNumber: $validated['accountNumber'],
+            countryCode: $validated['countryCode']
+        );
 
+        $response = (new GetForexExchangeRates())->convert($data);
 
         return back()
-            ->withInput($request->all())
-            ->with('response', $response);
+            ->withInput(input: $request->all())
+            ->with(key: 'response', value: $response);
     }
 }

@@ -13,15 +13,18 @@ class CheckOutController extends Controller
             'callbackUrl' => route(name: 'payment-callback'),
             'merchantCode' => config(key: 'jenga.merchant'),
             'wallet' => config(key: 'jenga.wallet'),
-            'orderAmount' => rand(min: 1, max: 5),
+            'orderAmount' => 1,
             'orderReference' => random_int(min: 100_001, max: 999_999),
             'productType' => 'Subscription',
             'productDescription' => 'Product for testing jenga api.',
             'paymentTimeLimit' => config(key: 'jenga.limit'),
             'customerFirstName' => 'Kamau',
             'customerLastName' => 'Otieno',
+            'customerEmail' => 'njoguamos@gmail.com',
+            'customerPhone' => '700325008',
+            'countryCode' => config(key: 'jenga.country'),
             'customerPostalCodeZip' => rand(min: 200, max: 999),
-            'customerAddress' => 'Kilimani, Nairobi',
+            'customerAddress' => 'Kilome Road House, Nairobi',
             'extraData' => 'No Extra Data'
         ]);
     }
