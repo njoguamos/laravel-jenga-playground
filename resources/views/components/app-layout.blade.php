@@ -71,8 +71,8 @@
 
     <x-container>
         @if($showBackUrl)
-            <div class="mb-6">
-                <button type="button"
+            <div class="mb-6 flex shrink-0">
+                <a href="{{ route('home') }}"
                         class="flex items-center py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
                     <svg aria-hidden="true" class="w-5 h-5 mr-2 -ml-1 rotate-180" fill="currentColor"
                          viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -81,11 +81,12 @@
                               clip-rule="evenodd"></path>
                     </svg>
                     Go back Home
-                </button>
+                </a>
             </div>
         @endif
 
         {{ $slot }}
+
     </x-container>
 </div>
 
