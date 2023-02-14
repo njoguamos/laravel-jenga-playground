@@ -2053,16 +2053,16 @@
         },
         {
             "name": "njoguamos/laravel-jenga",
-            "version": "v1.2.0",
+            "version": "v1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/njoguamos/laravel-jenga.git",
-                "reference": "bb8003f89dafdd55fbff093d781969b56e6e5f45"
+                "reference": "0138ee3b8eba381967757cfe8facdef385a1280f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/njoguamos/laravel-jenga/zipball/bb8003f89dafdd55fbff093d781969b56e6e5f45",
-                "reference": "bb8003f89dafdd55fbff093d781969b56e6e5f45",
+                "url": "https://api.github.com/repos/njoguamos/laravel-jenga/zipball/0138ee3b8eba381967757cfe8facdef385a1280f",
+                "reference": "0138ee3b8eba381967757cfe8facdef385a1280f",
                 "shasum": ""
             },
             "require": {
@@ -2083,7 +2083,8 @@
                 "phpstan/extension-installer": "^1.1",
                 "phpstan/phpstan-deprecation-rules": "^1.0",
                 "phpstan/phpstan-phpunit": "^1.0",
-                "phpunit/phpunit": "^9.5"
+                "phpunit/phpunit": "^9.5",
+                "spatie/pest-plugin-test-time": "^1.1"
             },
             "type": "library",
             "extra": {
@@ -2123,9 +2124,9 @@
             ],
             "support": {
                 "issues": "https://github.com/njoguamos/laravel-jenga/issues",
-                "source": "https://github.com/njoguamos/laravel-jenga/tree/v1.2.0"
+                "source": "https://github.com/njoguamos/laravel-jenga/tree/v1.3.1"
             },
-            "time": "2023-02-14T20:37:14+00:00"
+            "time": "2023-02-14T22:41:00+00:00"
         },
         {
             "name": "nunomaduro/termwind",

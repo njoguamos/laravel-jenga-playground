@@ -12,6 +12,8 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
 
+    @stack('scripts')
+
 </head>
 <body class="antialiased font-sans bg-gray-100 grid md:grid-cols-12 gap-6 min-h-screen w-full">
 
