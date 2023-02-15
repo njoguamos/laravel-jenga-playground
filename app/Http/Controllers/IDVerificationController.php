@@ -8,13 +8,15 @@ use NjoguAmos\Jenga\Dto\IDVerificationDto;
 
 class IDVerificationController extends Controller
 {
-    public function create(){
-        return view(view: 'identity',data: [
-            'country' => config(key: 'jenga.country')
+    public function create()
+    {
+        return view(view: 'identity', data: [
+            'country' => config(key: 'jenga.country'),
         ]);
     }
 
-    public function store(Request $request){
+    public function store(Request $request)
+    {
         $validated = $request->validate([
             'documentNumber' => ['required'],
             'firstName' => ['required'],

@@ -46,7 +46,6 @@ return [
 
     'secret' => env(key: 'JENGA_CONSUMER_SECRET'),
 
-
     /*
      |--------------------------------------------------------------------------
      | Encryption Keys Folder Path
@@ -106,7 +105,6 @@ return [
     'checkout' => env(key: 'JENGA_LIVE_MODE', default: false) === true
         ? 'https://v3.jengapgw.io/processPayment'
         : 'https://checkout-ui-v3-uat.azurewebsites.net/processPayment',
-
 
     /*
      |--------------------------------------------------------------------------

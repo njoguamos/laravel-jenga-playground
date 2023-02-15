@@ -8,13 +8,15 @@ use NjoguAmos\Jenga\Dto\ExchangeRatesDto;
 
 class ForexRatesController extends Controller
 {
-    public function create(){
-        return view(view: 'forex',data: [
-            'account' => config(key: 'jenga.account')
+    public function create()
+    {
+        return view(view: 'forex', data: [
+            'account' => config(key: 'jenga.account'),
         ]);
     }
 
-    public function store(Request $request){
+    public function store(Request $request)
+    {
         $validated = $request->validate([
             'amount' => ['required'],
             'currencyCode' => ['required'],

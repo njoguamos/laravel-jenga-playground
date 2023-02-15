@@ -25,14 +25,14 @@ class AppLayout extends Component
 
     public mixed $token = 'Run jenga:auth to generate';
 
-    public function __construct( public bool $showBackUrl = false)
+    public function __construct(public bool $showBackUrl = false)
     {
         $this->merchantCode = config(key: 'jenga.merchant') ?: 'Get merchant code from https://v3.jengahq.io';
         $this->host = config(key: 'jenga.host');
         $this->key = config(key: 'jenga.key') ?: 'Get api from https://v3.jengahq.io';
         $this->secret = config(key: 'jenga.secret') ?: 'Get consumer secret from https://v3.jengahq.io';
 
-        if (config(key: 'jenga.keys_path').'/jenga.pub.key'){
+        if (config(key: 'jenga.keys_path').'/jenga.pub.key') {
             $this->publicKey = file_get_contents(filename: config(key: 'jenga.keys_path').'/jenga.pub.key');
         }
 

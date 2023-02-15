@@ -7,7 +7,8 @@ use NjoguAmos\Jenga\Models\JengaToken;
 
 class CheckOutController extends Controller
 {
-    public function __invoke(){
+    public function __invoke()
+    {
         $reference = random_int(min: 100_001, max: 999_999);
 
         $data = [
@@ -39,7 +40,7 @@ class CheckOutController extends Controller
             'customerPostalCodeZip' => rand(min: 200, max: 999),
             'customerAddress' => 'Kilome Road House, Nairobi',
             'extraData' => 'No Extra Data',
-            'signature' => $signature
+            'signature' => $signature,
         ]);
     }
 }
