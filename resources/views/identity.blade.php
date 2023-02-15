@@ -3,7 +3,7 @@
 @endpush
 
 <x-app-layout :showBackUrl="true">
-    <div class="h2 text-2xl font-bold mb-5">Forex conversion api</div>
+    <div class="text-xl font-bold mb-5">Forex conversion api</div>
 
     <form class="bg-white rounded-lg grid md:grid-cols-2 gap-6 p-6" action="{{ route('identity') }}" method="post">
         @csrf

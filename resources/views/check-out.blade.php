@@ -1,5 +1,5 @@
 <x-app-layout :showBackUrl="true">
-    <div class="h2 text-2xl font-bold mb-5">Payment Gateway Checkout</div>
+    <div class="text-xl font-bold mb-5">Payment Gateway Checkout</div>
 
     <p class="mb-5 text-gray-700">Note: These field should be hidden by default. For will be submitted to {{ $checkOutUrl }}</p>
 
@@ -75,12 +75,12 @@
             <input id="customerAddress" name="customerAddress" value="{{ $customerAddress }}" class="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
         </div>
 
-        <div class="mb-2 md:col-span-4">
+        <div class="mb-2 md:col-span-2">
             <label for="extraData" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Extra data</label>
             <input id="extraData" name="extraData" value="{{ \Illuminate\Support\Str::random(32) }}" class="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
         </div>
 
-        <div class="mb-2 md:col-span-4">
+        <div class="mb-2 md:col-span-2">
             <label for="callbackUrl" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Callback</label>
             <input id="callbackUrl" name="callbackUrl" value="{{ $callbackUrl }}" class="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
         </div>

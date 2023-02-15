@@ -12,7 +12,7 @@
         </a>
     </div>
 
-    <div class="h2 text-2xl font-bold mb-5">Payment Callback Response</div>
+    <div class="text-xl font-bold mb-5">Payment Callback Response</div>
 
     <x-response/>
 </x-app-layout>

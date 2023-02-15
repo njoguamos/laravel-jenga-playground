@@ -45,14 +45,17 @@ DB_PASSWORD=
 
 # Jenga Credenatials
 JENGA_LIVE_MODE=false
+JENGA_MERCHANT_CODE=
 JENGA_API_KEY=
 JENGA_CONSUMER_SECRET=
-JENGA_MERCHANT_CODE=
+
+# Optional
 JENGA_DEFAULT_ACC=
 JENGA_DEFAULT_WALLET=
+JENGA_COUNTRY_CODE=
 ```
 
-### Migrate databse
+### Migrate database
 
 ```shell
 php artisan migrate
