@@ -8,7 +8,7 @@
         "autoprefixer": "^10.4.16",
         "flowbite": "^2.2.1",
         "laravel-vite-plugin": "^0.8.1",
-        "postcss": "^8.4.31",
+        "postcss": "^8.4.32",
         "tailwindcss": "^3.4.0",
         "vite": "^4.5.0"
     }
